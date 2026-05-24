@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Banking Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Banking Dashboard</h1>
+    <p>Welcome, Sudhanshu Gupta</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card balance">
+      <h2>Account Balance</h2>
+      <p>₹ 1,25,000</p>
+    </div>
+
+    <div class="card">
+      <h2>Recent Transactions</h2>
+
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Amount</th>
+        </tr>
+
+        <tr>
+          <td>12 May</td>
+          <td>UPI Transfer</td>
+          <td>₹ 2,000</td>
+        </tr>
+
+        <tr>
+          <td>10 May</td>
+          <td>ATM Withdrawal</td>
+          <td>₹ 5,000</td>
+        </tr>
+
+        <tr>
+          <td>08 May</td>
+          <td>Salary Credit</td>
+          <td>₹ 30,000</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Fund Transfer</h2>
+
+      <input type="text" placeholder="Account Number"/>
+      <input type="text" placeholder="IFSC Code"/>
+      <input type="number" placeholder="Amount"/>
+
+      <button onclick="transferMoney()">
+        Transfer
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>Loan Services</h2>
+
+      <ul>
+        <li>Home Loan</li>
+        <li>Car Loan</li>
+        <li>Education Loan</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Customer Support</h2>
+
+      <p>Email: support@bank.com</p>
+      <p>Helpline: 1800-123-456</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
